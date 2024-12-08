@@ -1,0 +1,162 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".login_page">
+
+    <!-- Main container for login form -->
+    <LinearLayout
+        android:layout_width="324dp"
+        android:layout_height="470dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#1F1F1F"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:padding="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="TextSizeCheck">
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/welcome"
+            android:textColor="#8AFFA3"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/instruction_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Enter your login details"
+            android:textColor="#8AFFA3"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="0dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/login"
+            android:textColor="#8AFFA3"
+            android:textSize="24sp" />
+
+
+        <!-- Username Input Field -->
+        <EditText
+            android:id="@+id/username_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#333"
+            android:hint="Username or Email"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#8AFFA3"
+            android:textColorHint="#A48AFFA3"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <!-- Password Input Field -->
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#333"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#8AFFA3"
+            android:textColorHint="#A48AFFA3"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/loginbutton"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#8AFFA3"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <!-- ProgressBar beside Login Button -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:visibility="gone"
+                tools:ignore="ObsoleteLayoutParam" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/notamember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/not_yet_a_member"
+                android:textColor="#8AFFA3"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/signup_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#8AFFA3"
+                android:text="@string/sign_up"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

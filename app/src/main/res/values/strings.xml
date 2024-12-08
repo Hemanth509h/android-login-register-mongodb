@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">login an register</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_text">Well come</string>
+    <string name="register_welcome">Register</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logo_image">Logo Image</string>
+    <string name="p_hemanth_kumar">P Hemanth Kumar</string>
+    <string name="home_page">Well come</string>
+    <string name="not_yet_a_member">Not yet a member?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account">Have an account</string>
+    <string name="sign_in">sign in</string>
+
+
+</resources>
